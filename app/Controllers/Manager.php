@@ -22,5 +22,12 @@ class Manager extends BaseController
         $data['session'] = $this->session->get();
         return view('manager/manager',$data);
     }
+    public function profile()
+        {
+             $data['session'] = $this->session->get();
+             return view('auth/profile',$data);
+        }
+
+   
    
 }
